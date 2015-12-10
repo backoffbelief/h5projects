@@ -52,11 +52,6 @@ function drawArcs(){
 }
 
 function drawPics(){
-	console.log("dddddd");
-//	var img = new Image();
-//	img.src = 'img/eg_flower.png';
-//	cxt.drawImage(img,0,0);
-
     preLoadImage('img/eg_flower.png', function(){
     	   cxt.drawImage(this,0,0);
     });
@@ -77,3 +72,15 @@ function preLoadImage(url, callback)
 		callback.call(img);
 	}
 }
+
+ function getData()
+  {
+  	$.ajax({
+  		type:"get",
+  		url:"http://127.0.0.1/login/getUserInfo/op",
+  		async:true,
+  		success:function(data){
+  			document.getElementById('content').innerHTML = JSON.stringify(data) ;
+  		}
+  	});
+  }
