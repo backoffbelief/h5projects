@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>myCoc</title>
 	</head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+
 	<body>
-		<canvas id="myCanvas" width="800" height="800"
-			style="border:1px solid #d3d3d3;background:#ffffff;"
-			> Your browser does not support the HTML5 canvas tag.</canvas>
-		<script type="text/javascript" src="js/game.js" ></script>
+		<button id="btn" onclick="showUser()">请求</button>
+		<button id="btn" onclick="createNewBuilding()">创建</button>
+		<canvas id="myCanvas" width="640" height="640" style="border:1px solid #d3d3d3;background:#ffffff;"> Your browser does not support the HTML5 canvas tag.</canvas>
+		<script type="text/javascript" src="js/game.js"></script>
+		<ul>
+			<li>
+				<p id="id"></p>
+			</li>
+			<li>
+				<p id="rank"></p>
+			</li>
+			<li>
+				<p id="fame"></p>
+			</li>
+			<li>
+				<p id="dimaond"></p>
+			</li>
+			<li>
+				<p id="platformId"></p>
+			</li>
+		</ul>
 	</body>
+
 </html>
