@@ -8,27 +8,17 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 
 	<body>
-		<button id="btn" onclick="showUser()">请求</button>
-		<button id="btn" onclick="createNewBuilding()">创建</button>
 		<canvas id="myCanvas" width="640" height="640" style="border:1px solid #d3d3d3;background:#ffffff;"> Your browser does not support the HTML5 canvas tag.</canvas>
 		<script type="text/javascript" src="js/game.js"></script>
-		<ul>
-			<li>
-				<p id="id"></p>
-			</li>
-			<li>
-				<p id="rank"></p>
-			</li>
-			<li>
-				<p id="fame"></p>
-			</li>
-			<li>
-				<p id="dimaond"></p>
-			</li>
-			<li>
-				<p id="platformId"></p>
-			</li>
-		</ul>
+		<button id="btn" onclick="showUser()">请求</button>
+		<button id="btn" onclick="createNewBuilding()">创建</button>
+		<table>
+			<tr><td>id:</td><td id="id"></td></tr>
+			<tr><td>rank:</td><td id="rank"></td></tr>
+			<tr><td>fame:</td><td id="fame"></td></tr>
+			<tr><td>dimaond:</td><td id="dimaond"></td></tr>
+			<tr><td>platformId:</td><td id="platformId"></td></tr>
+		</table>
 	</body>
 
 </html>

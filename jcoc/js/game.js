@@ -147,32 +147,30 @@ function draw(data)
 		cxt.save();
 		cxt.fillStyle='green';
 		for (var i = 0; i < objs.length; i++) {
-			var size = getSize(objs[i].xmlId);
-			fill0(cxt,objs[i].posX,objs[i].posY,size);
+			fill0(cxt,objs[i].posX,objs[i].posY,getSize(objs[i].xmlId));
 		}
 		cxt.restore();
 		cxt.save();
 		cxt.fillStyle='red';
 		objs = data['buildings'];
 		for (var i = 0; i < objs.length; i++) {
-			var size = getSize(objs[i].xmlId);
-			fill0(cxt,objs[i].posX,objs[i].posY,size);
+			fill0(cxt,objs[i].posX,objs[i].posY,getSize(objs[i].xmlId));
 		}
 		cxt.restore();
 		if(data.user.id){
-			document.getElementById('id').innerHTML="id:"+data.user.id;
+			document.getElementById('id').innerHTML=data.user.id;
 		}
 		if(data.user.rank){
-			document.getElementById('rank').innerHTML="rank:"+data.user.rank;
+			document.getElementById('rank').innerHTML=data.user.rank;
 		}
 		if(data.user.platformId){
-			document.getElementById('platformId').innerHTML="platformId:"+data.user.platformId;
+			document.getElementById('platformId').innerHTML=data.user.platformId;
 		}
 		if(data.user.fame){
-			document.getElementById('fame').innerHTML="fame:"+data.user.fame;
+			document.getElementById('fame').innerHTML=data.user.fame;
 		}
 		if(data.user.dimaond){
-			document.getElementById('dimaond').innerHTML="dimaond:"+data.user.dimaond;
+			document.getElementById('dimaond').innerHTML=data.user.dimaond;
 		}
 	}
 	//setInterval(1000);
